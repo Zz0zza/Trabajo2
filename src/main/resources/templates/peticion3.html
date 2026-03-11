@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Peticion 3</title>
+</head>
+<body>
+<h1>Presas de los tiburones</h1>
+<ul>
+<li th:each="p : ${resultado}" th:text="${p}"></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Peticion 4</title>
+</head>
+<body>
+
+<h1>Consultas sobre comidas</h1>
+
+<p>
+¿Hay tiburones sin comida?
+<span th:text="${sinComida} ? 'Verdadero' : 'Falso'"></span>
+</p>
+
+<p>
+¿Hay tiburones con más de una comida?
+<span th:text="${masDeUna} ? 'Verdadero' : 'Falso'"></span>
+</p>
+
+<p>
+¿Ningún tiburón tiene más de 3 comidas?
+<span th:text="${masDeTres} ? 'Verdadero' : 'Falso'"></span>
+</p>
+
+</body>
+</html>
